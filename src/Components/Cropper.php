@@ -75,10 +75,7 @@ class Cropper extends FileUpload
 
     public function getDragMode(): DragMode
     {
-        if (empty($this->dragMode)) {
-            return DragMode::NONE;
-        }
-        return $this->evaluate($this->dragMode);
+        return 'move';
     }
 
 
