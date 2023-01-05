@@ -14,11 +14,8 @@ trait HasViewMode
         return $this;
     }
 
-    public function getViewMode(): ViewMode
+    public function getViewMode(): int
     {
-        if (empty($this->viewMode)) {
-            return ViewMode::FIT_FILL_CANVAS;
-        }
-        return $this->evaluate($this->viewMode);
+        return 3;
     }
 }
