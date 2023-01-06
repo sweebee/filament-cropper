@@ -73,7 +73,7 @@ class Cropper extends FileUpload
         return $this;
     }
 
-    public function getDragMode(): DragMode
+    public function getDragMode(): string
     {
         return 'move';
     }
