@@ -145,11 +145,6 @@
             width="{{$getModalSize()}}"
             id="cropper-modal-{{ $getStatePath() }}"
         >
-            <x-slot name="heading">
-                <x-filament::modal.heading>
-                    {{$getModalHeading()}}
-                </x-filament::modal.heading>
-            </x-slot>
             <div class=" z-5 w-full h-full flex flex-col justify-between"
 
                  x-data="imageCropper({
